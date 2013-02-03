@@ -13,7 +13,7 @@
 
 /assets
 /system
-!.gitignore
+.gitignore
 !.gitmodules
 !README.md
 .index.php
