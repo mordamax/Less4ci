@@ -1,7 +1,7 @@
 Less4ci
 =======
 
-Less Library for CodeIgniter
+Less Compiler for CodeIgniter
 
 
 How to use?

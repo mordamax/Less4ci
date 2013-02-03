@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * [Less](http://lesscss.org/) The dynamic stylesheet language.
+ * LESS extends CSS with dynamic behavior such as variables, mixins,
+ * operations and functions. LESS runs on both the client-side (Chrome, Safari, Firefox)
+ * and server-side, with Node.js and Rhino.
+ *
+ * @see        http://lesscss.org/
+ * @version    0.1.0
+ * @author     mordamax@gmail.com
+ * @copyright  (c) 2013 Maksym Hlukhovtsov
+ * @license    http://ellislab.com/codeigniter/user-guide/license.html
+ */
+
 class Less4ci {
 
 	public static function compile($file = FALSE)
@@ -17,7 +30,7 @@ class Less4ci {
 
 		if ( ! file_exists( $doc_root .DIRECTORY_SEPARATOR. $input ) )
 		{
-			throw new Exception('The file could not be found: '.$_SERVER['DOCUMENT_ROOT'].'/'.$input);
+			throw new Exception('The file could not be found: '. $doc_root .DIRECTORY_SEPARATOR. $input);
 		}
 
 		if ( ! class_exists('lessc', FALSE))
